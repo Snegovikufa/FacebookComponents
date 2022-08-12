@@ -12,7 +12,7 @@ using Xamarin.Facebook.Messenger;
 
 namespace MessengerSendSample
 {
-    [Activity (Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity (Label = "@string/app_name", MainLauncher = true, Icon = "@drawable/icon", Exported = true)]
     [IntentFilter (new [] { Intent.ActionPick }, 
         Categories = new [] { Intent.CategoryDefault, "com.facebook.orca.category.PLATFORM_THREAD_20150311" })]
     [IntentFilter (new [] { Intent.ActionPick }, 

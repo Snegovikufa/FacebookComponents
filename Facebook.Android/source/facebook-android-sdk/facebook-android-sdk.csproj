@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
-    <TargetFramework>MonoAndroid90</TargetFramework>
+    <TargetFramework>MonoAndroid120</TargetFramework>
     <IsBindingProject>true</IsBindingProject>
 
     <AssemblyName>Xamarin.Facebook.Android</AssemblyName>
@@ -11,6 +11,7 @@
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AndroidUseIntermediateDesignerFile>True</AndroidUseIntermediateDesignerFile>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -38,9 +39,6 @@
   </ItemGroup>
     
   <ItemGroup>
-    <None Remove="Xamarin.Kotlin.StdLib.Jdk7" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="..\..\External-Dependency-Info.txt" Pack="True" PackagePath="THIRD-PARTY-NOTICES.txt" />
   </ItemGroup>
 
@@ -56,13 +54,6 @@
     <ProjectReference Include="..\facebook-core\facebook-core.csproj" PrivateAssets="None" />
     <ProjectReference Include="..\facebook-common\facebook-common.csproj" PrivateAssets="None" />
     <ProjectReference Include="..\facebook-login\facebook-login.csproj" PrivateAssets="None" />
-    <ProjectReference Include="..\facebook-share\facebook-share.csproj" PrivateAssets="None" />
-    <ProjectReference Include="..\facebook-applinks\facebook-applinks.csproj" PrivateAssets="None" />
-    <ProjectReference Include="..\facebook-messenger\facebook-messenger.csproj" PrivateAssets="None" />
-    <ProjectReference Include="..\facebook-gamingservices\facebook-gamingservices.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.5.10" />
-  </ItemGroup>
 </Project>

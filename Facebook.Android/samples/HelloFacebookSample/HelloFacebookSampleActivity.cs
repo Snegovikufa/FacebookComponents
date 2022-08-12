@@ -40,7 +40,7 @@ using AndroidX.Fragment.App;
 
 namespace HelloFacebookSample
 {
-	[Activity (Label = "@string/app_name", MainLauncher = true, WindowSoftInputMode = SoftInput.AdjustResize)]
+	[Activity (Label = "@string/app_name", MainLauncher = true, WindowSoftInputMode = SoftInput.AdjustResize, Exported = true)]
 	public class HelloFacebookSampleActivity : FragmentActivity
 	{	
         static readonly string [] PERMISSIONS = new [] { "publish_actions" };

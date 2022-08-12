@@ -15,7 +15,7 @@
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidApplication>True</AndroidApplication>
     <AssemblyName>HelloFacebookSample</AssemblyName>
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
   </PropertyGroup>
@@ -95,10 +95,6 @@
     <ProjectReference Include="..\..\source\facebook-messenger\facebook-messenger.csproj">
       <Project>{8C2FE975-7E42-4406-A227-F784B1229711}</Project>
       <Name>facebook-messenger</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\source\facebook-places\facebook-places.csproj">
-      <Project>{D52D63B9-8663-44DC-9193-67D2F5CD0876}</Project>
-      <Name>facebook-places</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\source\facebook-share\facebook-share.csproj">
       <Project>{2CBCDFF2-8FF9-4FA8-BD40-078EB43E5CE1}</Project>
