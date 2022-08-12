@@ -11,7 +11,6 @@
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AndroidUseIntermediateDesignerFile>True</AndroidUseIntermediateDesignerFile>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
-    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
   </PropertyGroup>
 
   <PropertyGroup>
