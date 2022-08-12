@@ -140,13 +140,13 @@ namespace GenParamNames
             var htmlDoc = new HtmlDocument();
             htmlDoc.Load(fileToLoad);
 
-            var packageDiv = htmlDoc.DocumentNode.SelectSingleNode("/html/body/div[@class='header']/div");
+            var packageDiv = htmlDoc.DocumentNode.SelectSingleNode("/html/body/main/div[@class='header']/div");
             if (packageDiv == null)
                 return null; ;
 
             newClass.PackageName = packageDiv.InnerText.Trim();
 
-            var classNameNode = htmlDoc.DocumentNode.SelectSingleNode("/html/body/div[@class='header']/h2");
+            var classNameNode = htmlDoc.DocumentNode.SelectSingleNode("/html/body/main/div[@class='header']/h2");
             if (classNameNode == null)
                 return null;
 
@@ -161,7 +161,7 @@ namespace GenParamNames
 
             void ScanMethods(string detailSelector, List<Method> methods)
             {
-                var methodDetailNode = htmlDoc.DocumentNode.SelectSingleNode($"/html/body/div[@class='contentContainer']/div[@class='details']/ul/li/ul/li/a[@name='{detailSelector}.detail']");
+                var methodDetailNode = htmlDoc.DocumentNode.SelectSingleNode($"/html/body/main/div[@class='contentContainer']/div[@class='details']/ul/li/ul/li/a[@name='{detailSelector}.detail']");
                 if (methodDetailNode != null)
                 {
                     var methodNodeList = methodDetailNode.ParentNode.SelectNodes($"./a[not(@name='{detailSelector}.detail')]");
