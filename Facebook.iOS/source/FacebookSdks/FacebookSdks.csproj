@@ -8,7 +8,7 @@
     <RootNamespace>Facebook</RootNamespace>
     <AssemblyName>Facebook</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>12.2.0.1</FileVersion>
+    <FileVersion>14.1.0.0</FileVersion>
     <IncludeBuildOutput>false</IncludeBuildOutput>
   </PropertyGroup>
 
@@ -23,7 +23,7 @@
     <PackageProjectUrl>https://go.microsoft.com/fwlink/?linkid=865580</PackageProjectUrl>
     <PackageLicenseUrl>https://go.microsoft.com/fwlink/?linkid=865584</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageVersion>12.2.0.1</PackageVersion>
+    <PackageVersion>14.1.0.0</PackageVersion>
   </PropertyGroup>
   
   <ItemGroup>
