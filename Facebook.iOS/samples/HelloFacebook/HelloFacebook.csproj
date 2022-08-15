@@ -61,8 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\source\CoreKit\CoreKit.csproj" />
-    <ProjectReference Include="..\..\source\GamingServicesKit\GamingServicesKit.csproj" />
     <ProjectReference Include="..\..\source\LoginKit\LoginKit.csproj" />
-    <ProjectReference Include="..\..\source\ShareKit\ShareKit.csproj" />
   </ItemGroup>
 </Project>
