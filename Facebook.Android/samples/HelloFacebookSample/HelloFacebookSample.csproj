@@ -15,9 +15,10 @@
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidApplication>True</AndroidApplication>
     <AssemblyName>HelloFacebookSample</AssemblyName>
-    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
+    <TargetFramework>MonoAndroid110</TargetFramework>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,6 +66,7 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-mdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\values\theme.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\layout\" />
@@ -72,14 +74,6 @@
     <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\source\facebook-android-sdk\facebook-android-sdk.csproj">
-      <Project>{6036BCD2-89C4-4FE8-BF09-741F1F6DF352}</Project>
-      <Name>facebook-android-sdk</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\source\facebook-applinks\facebook-applinks.csproj">
-      <Project>{EB36D886-A79E-4F4F-82A4-7C9DF2675E05}</Project>
-      <Name>facebook-applinks</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\source\facebook-common\facebook-common.csproj">
       <Project>{A3D74100-6CD4-4331-AFBB-63F14F5E5040}</Project>
       <Name>facebook-common</Name>
@@ -92,18 +86,10 @@
       <Project>{777C95DA-95B2-4171-B694-77F4741B0F33}</Project>
       <Name>facebook-login</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\source\facebook-messenger\facebook-messenger.csproj">
-      <Project>{8C2FE975-7E42-4406-A227-F784B1229711}</Project>
-      <Name>facebook-messenger</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\source\facebook-share\facebook-share.csproj">
-      <Project>{2CBCDFF2-8FF9-4FA8-BD40-078EB43E5CE1}</Project>
-      <Name>facebook-share</Name>
-    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
-        <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.1.0.1" />
+      <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.3.1.5" />
   </ItemGroup>
 
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
