@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Activity" parent="android:Theme">
+        <item name="android:windowBackground">#ffffff</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
