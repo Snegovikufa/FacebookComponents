@@ -1,7 +1,7 @@
-#addin nuget:?package=Cake.XCode&version=4.2.0
+#addin nuget:?package=Cake.XCode&version=5.0.0
 #addin nuget:?package=Cake.Xamarin.Build&version=4.1.2
-#addin nuget:?package=Cake.Xamarin&version=3.0.2
-#addin nuget:?package=Cake.FileHelpers&version=3.2.1
+#addin nuget:?package=Cake.Xamarin&version=4.0.0
+#addin nuget:?package=Cake.FileHelpers&version=5.0.0
 
 #load "poco.cake"
 
